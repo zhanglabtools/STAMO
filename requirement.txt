@@ -1,0 +1,11 @@
+scanpy==1.9.8
+POT==0.9.5
+parse==1.20.2
+pytorch-ignite==0.5.2
+pynvml==11.5.3
+sparse==0.15.5
+pybedtools==0.12.0
+tensorboardX==2.6.2.2
+leidenalg==0.10.2
+esda==2.5.1
+annoy==1.17.3
