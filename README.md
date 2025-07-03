@@ -51,7 +51,7 @@ Please ensure the required packages: [POT](https://pythonot.github.io/), [bedtoo
 Finally, you can install STAMO as follows:
 
 ```
-git clone https://github.com/zhoux85/STAMO.git
+git clone https://github.com/zhanglabtools/STAMO.git
 cd STAMO-main
 python setup.py build
 python setup.py install
