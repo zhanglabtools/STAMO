@@ -18,7 +18,8 @@ setup(
     author = __author__,
     author_email = __author_email__,
     license = __license__,
-    packages = ['STAMO'],
+    ## packages = ['STAMO'],
+    packages = find_packages(include=['STAMO', 'STAMO.*'])
     install_requires = __requires__,
     zip_safe = False,
     include_package_data = True,
