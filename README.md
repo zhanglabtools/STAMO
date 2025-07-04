@@ -43,7 +43,7 @@ Please ensure the required packages: [POT](https://pythonot.github.io/), [bedtoo
 - Other packages can be found in requirement.txt:
 
   ```
-  pip install -r requiement.txt
+  pip install -r requirement.txt
   ```
 
 
