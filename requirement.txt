@@ -9,3 +9,5 @@ tensorboardX==2.6.2.2
 leidenalg==0.10.2
 esda==2.5.1
 annoy==1.17.3
+scikit-misc==0.1.4
+dill==0.4.0
