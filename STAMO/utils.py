@@ -757,29 +757,29 @@ import sklearn.preprocessing
 import sklearn.utils.extmath
 # from harmony import harmonize
 
-def mclust_R(adata, num_cluster, modelNames='EEE', used_obsm='STAGATE', random_seed=666):
-    """\
-    Clustering using the mclust algorithm.
-    The parameters are the same as those in the R package mclust.
-    """
+# def mclust_R(adata, num_cluster, modelNames='EEE', used_obsm='STAGATE', random_seed=666):
+#     """\
+#     Clustering using the mclust algorithm.
+#     The parameters are the same as those in the R package mclust.
+#     """
 
-    np.random.seed(random_seed)
-    import rpy2.robjects as robjects
-    robjects.r.library("mclust")
+#     np.random.seed(random_seed)
+#     import rpy2.robjects as robjects
+#     robjects.r.library("mclust")
 
-    import rpy2.robjects.numpy2ri
-    rpy2.robjects.numpy2ri.activate()
-    r_random_seed = robjects.r['set.seed']
-    r_random_seed(random_seed)
-    rmclust = robjects.r['Mclust']
+#     import rpy2.robjects.numpy2ri
+#     rpy2.robjects.numpy2ri.activate()
+#     r_random_seed = robjects.r['set.seed']
+#     r_random_seed(random_seed)
+#     rmclust = robjects.r['Mclust']
 
-    res = rmclust(adata.obsm[used_obsm], num_cluster, modelNames)
-    mclust_res = np.array(res[-2])
+#     res = rmclust(adata.obsm[used_obsm], num_cluster, modelNames)
+#     mclust_res = np.array(res[-2])
 
-    adata.obs['mclust'] = mclust_res
-    adata.obs['mclust'] = adata.obs['mclust'].astype('int')
-    adata.obs['mclust'] = adata.obs['mclust'].astype('category')
-    return adata
+#     adata.obs['mclust'] = mclust_res
+#     adata.obs['mclust'] = adata.obs['mclust'].astype('int')
+#     adata.obs['mclust'] = adata.obs['mclust'].astype('category')
+#     return adata
 
 import scipy.sparse as sp
 def refine_clusters(result, adj, p=0.5):
@@ -1218,12 +1218,12 @@ def FGWOT_mapping(adata1, adata2, alpha=0.5):
 
     ## armijo (bool, optional) – If True the step of the line-search is found via an armijo research.
     ## Else closed form is used. If there are convergence issues use False.
-    if armijo:
-        def line_search(cost, G, deltaG, Mi, cost_G, **kwargs):
-            return ot.optim.line_search_armijo(cost, G, deltaG, Mi, cost_G, nx=nx, **kwargs)
-    else:
-        def line_search(cost, G, deltaG, Mi, cost_G, **kwargs):
-            return solve_gromov_linesearch(G, deltaG, cost_G, C1, C2, M=0., reg=1., nx=nx, **kwargs)
+    # if armijo:
+    #     def line_search(cost, G, deltaG, Mi, cost_G, **kwargs):
+    #         return ot.optim.line_search_armijo(cost, G, deltaG, Mi, cost_G, nx=nx, **kwargs)
+    # else:
+    #     def line_search(cost, G, deltaG, Mi, cost_G, **kwargs):
+    #         return solve_gromov_linesearch(G, deltaG, cost_G, C1, C2, M=0., reg=1., nx=nx, **kwargs)
 
     constC, hC1, hC2 = ot.gromov.init_matrix(C1, C2, p, q, loss_fun)
 
