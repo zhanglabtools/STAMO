@@ -1,4 +1,4 @@
-# STAMO (pronunciation: /steimoʊ/)
+# STAMO (/steimoʊ/)
 
 ![](https://github.com/zhanglabtools/STAMO/blob/main/STAMO_overview.png)
 
