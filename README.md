@@ -7,7 +7,7 @@
 
 STAMO is designed for diagonal integration of unpaired spatial multi-omics data.
 
-STAMO adopts a two-stages training strategy. In stage 1, pretraining graph attention network to produce coarse aligned embeddings. In stage 2, identifying anchors via Fused Gromov-Wasserstein optimal transport and performing anchor guided alignment. STAMO can be applied to integrate unpaired spatial slices with distinct omics feature space (including DNA, CUT&Tag, ATAC, RNA, and Protein) and artificially generate paired multi-omics data from profiled single-omics slices.
+a. STAMO adopts a two-stages training strategy. In stage 1, pretraining graph attention network to produce coarse aligned embeddings. In stage 2, identifying anchors via Fused Gromov-Wasserstein optimal transport and performing anchor guided alignment. b. STAMO can identify consensus spatial domain across unpaired omics slices with distinct omics feature space (including DNA, CUT&Tag, ATAC, RNA, and Protein) (I) and cross-omics data generation from profiled single-omics slices (II).
 
 
 
@@ -88,5 +88,6 @@ This model borrows code for model training from [scGLUE](https://github.com/gao-
 
 
 ## Citation
+
 
 
