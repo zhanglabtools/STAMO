@@ -1,6 +1,6 @@
 # STAMO /steimoʊ/
 
-![](https://github.com/zhanglabtools/STAMO/blob/main/STAMO_overview.png)
+<img width="1372" height="716" alt="STAMO_overview" src="https://github.com/user-attachments/assets/2ad9d19a-eeb2-4a30-82a9-a7be26c7f5ab" />
 
 
 ## Overview
@@ -88,4 +88,5 @@ This model borrows code for model training from [scGLUE](https://github.com/gao-
 
 
 ## Citation
+
 
