@@ -7,7 +7,7 @@
 
 STAMO is designed for diagonal integration of unpaired spatial multi-omics data.
 
-a. STAMO adopts a two-stages training strategy. In stage 1, pretraining graph attention network to produce coarse aligned embeddings. In stage 2, identifying anchors via Fused Gromov-Wasserstein optimal transport and performing anchor guided alignment. b. STAMO can identify consensus spatial domain across unpaired omics slices with distinct omics feature space (including DNA, CUT&Tag, ATAC, RNA, and Protein) (I) and cross-omics data generation from profiled single-omics slices (II).
+a. STAMO adopts a two-stage training strategy. In stage 1, pretrain a graph attention network to produce coarse-aligned embeddings. In stage 2, identify anchors via Fused Gromov-Wasserstein optimal transport and perform anchor-guided alignment. b. STAMO outputs integrated spot representations and the trained model enables multi-omics data generation from profiled single-omics slices. The results can be used to identify consensus spatial domains across unpaired omics slices with distinct omics feature spaces (including DNA, CUT&Tag, ATAC, RNA, and Protein), slices from different developmental stages (I) and gene regulation network inference (II).
 
 
 
@@ -63,11 +63,11 @@ python setup.py install
 
 Step-by-step tutorials are included in the `Tutorial` folder to show how to use STAMO. 
 
-- Tutorial 1: Two-omics integration on P22 mouse brain slices (RNA and H3K27ac)
-- Tutorial 2: Five-omics integration on P22 mouse brain slices (RNA, ATAC, H3K27ac, H3K27me3, and H3K4me3)
-- Tutorial 3: Integration of mouse embryo brain slices across different developmental stages
-- Tutorial 4: Integration of slide-DNA-seq and slide-RNA-seq mouse liver metastasis slices
-- Tutorial 5: Integration of spatial transcriptomics and proteomics human lymph node slices
+- Tutorial 1: [Two-omics integration on P22 mouse brain slices (RNA and H3K27ac)](./Tutorials/Tutorial1_RNA_H3K27ac.ipynb)
+- Tutorial 2: [Five-omics integration on P22 mouse brain slices (RNA, ATAC, H3K27ac, H3K27me3, and H3K4me3)](./Tutorials/Tutorial2_RNA_five_omics.ipynb)
+- Tutorial 3: [Integration of mouse embryo brain slices across different developmental stages](./Tutorials/Tutorial3_Mouse_embryo.ipynb)
+- Tutorial 4: [Integration of slide-DNA-seq and slide-RNA-seq mouse liver metastasis slices](./Tutorials/Tutorial4_RNA_DNA.ipynb)
+- Tutorial 5: [Integration of spatial transcriptomics and proteomics human lymph node slices](./Tutorials/Tutorial5_RNA_Protein_Xenium.ipynb)
 
 
 ## Data
@@ -88,6 +88,7 @@ This model borrows code for model training from [scGLUE](https://github.com/gao-
 
 
 ## Citation
+
 
 
 
