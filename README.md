@@ -1,6 +1,6 @@
 # STAMO /steimoʊ/
 
-![](./STAMO_overview.png)
+![](./STAMO.png)
 
 
 ## Overview
