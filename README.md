@@ -1,6 +1,6 @@
 # STAMO /steimoʊ/
 
-![](./STAMO.png)
+<img width="2356" height="2139" alt="STAMO" src="https://github.com/user-attachments/assets/afc077dd-d3f7-425a-8515-36cd4b067a7e" />
 
 
 ## Overview
